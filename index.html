@@ -98,7 +98,7 @@ class Target {
         this.y = canvas.height + 50;
         this.r = 20;
         this.speed = Math.random() * 1.5 + 1;
-        this.color = "gold";
+        this.color = "red"; // ONLY CHANGE
     }
 
     update() {
@@ -152,7 +152,6 @@ function endGame() {
     clearInterval(timer);
     document.getElementById("message").style.display = "block";
 
-    // MASSIVE CONFETTI
     for (let i = 0; i < 400; i++) {
         confetti.push(
             new Confetti(
